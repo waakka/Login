@@ -60,15 +60,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-        if(hasFocus){
-            Log.e("tag","****登陆界面获得焦点 " + sdf.format(new Date()));
-        }else{
-            Log.e("tag","****登陆界面丢失焦点 " + sdf.format(new Date()));
-        }
-    }
 
     private boolean isLoginSuc(User user){
         if(TextUtils.isEmpty(user.getName())||TextUtils.isEmpty(user.getPwd())){
