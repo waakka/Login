@@ -11,6 +11,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvName,tvPwd;
     private Button btnLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,9 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
         Context context = this;
 
+
+
         tvName = findViewById(R.id.et_name);
         tvPwd = findViewById(R.id.et_pwd);
         btnLogin = findViewById(R.id.btn_login);
+
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,10 +75,14 @@ public class MainActivity extends AppCompatActivity {
 //            Toast.makeText(MainActivity.this, "账号密码不能为空！", Toast.LENGTH_LONG).show();
             return false;
         }
-        if("waakka".equals(user.getName())&&"123".equals(user.getPwd())){
+        if("123".equals(user.getName())&&"123".equals(user.getPwd())){
             return true;
         }
         return false;
     }
+
+
+
+
 
 }
