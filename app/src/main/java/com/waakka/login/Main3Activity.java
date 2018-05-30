@@ -12,13 +12,10 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        //不合理的单例模式、静态Activity、Context等
+        SingleInstance.getInstance(this);
 
-        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Main3Activity.this,Main4Activity.class));
-            }
-        });
+
     }
 }
 

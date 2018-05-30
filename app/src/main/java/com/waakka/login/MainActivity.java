@@ -62,14 +62,15 @@ public class MainActivity extends AppCompatActivity {
 
 
     private boolean isLoginSuc(User user){
-        if(TextUtils.isEmpty(user.getName())||TextUtils.isEmpty(user.getPwd())){
-//            Toast.makeText(MainActivity.this, "账号密码不能为空！", Toast.LENGTH_LONG).show();
-            return false;
-        }
-        if("123".equals(user.getName())&&"123".equals(user.getPwd())){
-            return true;
-        }
-        return false;
+        return true;
+//        if(TextUtils.isEmpty(user.getName())||TextUtils.isEmpty(user.getPwd())){
+////            Toast.makeText(MainActivity.this, "账号密码不能为空！", Toast.LENGTH_LONG).show();
+//            return false;
+//        }
+//        if("123".equals(user.getName())&&"123".equals(user.getPwd())){
+//            return true;
+//        }
+//        return false;
     }
 
 

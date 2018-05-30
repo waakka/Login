@@ -10,18 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="16dp"
         android:gravity="center">
         <TextView
-            android:text="第三个界面"
-            android:textSize="36sp"
+            android:text="当前Activity销毁时，SingleInstance仍持有当前Activity的对象的引用（mContext），导致当前Activity对象不能释放"
+            android:textSize="22sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btn3"
-            android:text="next"
-            android:layout_width="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
 

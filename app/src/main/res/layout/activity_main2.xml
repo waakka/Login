@@ -11,14 +11,23 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <TextView
-            android:text="第二个界面"
-            android:textSize="36sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/btn2"
-                android:text="next"
+                android:text="单例模式中持有activity的context"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn3"
+                android:text="持有静态View导致的内存泄漏"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn4"
+                android:text="较长生命周期的匿名内部类"
                 android:layout_width="match_parent"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"

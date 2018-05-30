@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main4Activity">
+    tools:context=".Main5Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,8 +13,7 @@
         android:padding="16dp"
         android:gravity="center">
         <TextView
-            android:id="@+id/test_text_view"
-            android:text="TestDataModel 持有Activity中的TextView的静态引用，而TextView又持有当前Activity的引用，从而导致当前Actity在onDestory之后不能释放"
+            android:text="当前Activity中的匿名内部类持有当前Activity的引用，并且该匿名内部类的生命周期比Activity要长"
             android:textSize="22sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

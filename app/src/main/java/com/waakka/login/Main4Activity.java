@@ -2,6 +2,7 @@ package com.waakka.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class Main4Activity extends AppCompatActivity {
 
@@ -10,7 +11,8 @@ public class Main4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-        //不合理的单例模式、静态Activity、Context等
-        SingleInstance4.getInstance(this);
+        TextView textView = (TextView) findViewById(R.id.test_text_view);
+
+        TestDataModel.getInstance().setRetainedTextView(textView);
     }
 }
